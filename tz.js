@@ -10,6 +10,6 @@ const args = yargs
   .argv;
 
 const targetTimezone = args._[0];
-if (yargs.argv.format) { formatstr = 'dddd, MMMM d YYYY, h:mm:ss a'; }
+if (yargs.argv.format) { formatstr = 'dddd, MMMM Do YYYY, h:mm:ss a'; }
 
 console.log(`The time at the ${targetTimezone} timezone is ${moment().tz(targetTimezone).format(formatstr)}`);
